@@ -14,12 +14,40 @@ html {
  * Global layout stuff
  */
 
+/* Normalize Code */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Encompases the body*/
 body {
+  float: left;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", "Sans Serif";
 }
-
+main {
+  padding: 0 10vw;
+  background-color: inherit;
+  text-align: center;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

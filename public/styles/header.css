@@ -1,0 +1,29 @@
+body .splash div {
+  position: static;
+  float: none;
+  /* changed height to auto from 400px
+  This ensure that when the browser is resized, the name and profile picutre
+  always has the proper background behind them */
+  height: auto;
+  width: 100vw;
+  background-color: olivedrab;
+  text-align: center;
+  background-image: url("/images/crissxcross.png");
+}
+
+body .splash h2 {
+  margin: 0px;
+  padding-bottom: 1em;
+  font-family: "Source Sans Pro", "Sans Serif";
+  color: black
+
+}
+
+/* On this one page website, header.css functionaly sits above new-tweet.css */
+
+/* Ensures that all img in the header (only the profile pic for now)
+are centered. 
+Seems to cause a bug where shrinking the window creates extra space on the right */
+/* header img {
+  margin: 0, auto;
+} */

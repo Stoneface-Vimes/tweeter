@@ -1,0 +1,32 @@
+/* Only contains the logo for now */
+nav {
+  position: relative;
+  float: top;
+  height: 120px;
+  max-height: auto;
+  width: 100vw;
+  z-index: 99; /* Set to 99 as it should alays be on top */
+  color: #FFFFFF;
+  background-color: #4056a1;
+  padding: 1.5em;
+  font-family: "Source Sans Pro", "Sans Serif";
+}
+/* Tweeter logo on the top left */
+nav span {
+  float: left;
+  margin-left: 8px;
+  position: relative;
+  font-family: Bungee, "Sans Serif";
+  font-size: 44px;
+}
+/* "Write a new tweet" on the top right */
+nav .write {
+  margin-right: 8px;
+  font-family: "Source Sans Pro", "Sans Serif";
+  font-size: 32px;
+  /* The below position prevents the text from being pushed down and potentially
+  un-allinging the profile picture */
+  position: absolute;
+  right: 0;
+  margin-right: 1.5em;
+}

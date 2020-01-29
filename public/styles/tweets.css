@@ -1,0 +1,100 @@
+body .tweet-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: static;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  width: 80vw;
+  border-style: solid;
+  text-align: left;
+  margin: 0, 16px;
+  position: static;
+  border-color: gray;
+  background-color: white;
+}
+
+
+body .tweet-container header{
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  min-width: 80px;
+  width: auto;
+  height: auto;
+  margin-left: 8px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body .tweet-container header img{
+  max-width: 80px;
+  width: auto;
+  height: auto;
+  margin-left: 8px;
+}
+
+body .tweet-container header div {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body .tweet-container header p {
+  display: none;
+  color: white;
+  display: flex;
+  justify-self: right;
+  align-self: center;
+  margin: inherit;
+  font-size: 24px;
+  padding-right: 16px;
+}
+body .tweet-container:hover p {
+  color: black;
+}
+
+/* Looks goofy fix later */
+body .tweet-container:hover footer img {
+  box-shadow: 2px 1px gray;
+}
+
+
+body .tweet-container #content {
+  border-bottom: teal;
+  padding-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-style: solid;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  padding-bottom: 16px;
+}
+
+body .tweet-container footer {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  float: right;
+  margin-bottom: 8px;
+
+}
+
+body .tweet-container footer p {
+  margin: 16px;
+  font-size: 16px;
+  color: black;
+}
+
+body .tweet-container footer img {
+  width: 16px;
+  height: auto;
+}
+
+article:hover {
+  box-shadow: 5px 5px darkgrey;
+  text-shadow: 2px 2px darkgrey;
+}

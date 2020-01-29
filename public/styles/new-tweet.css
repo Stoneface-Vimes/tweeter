@@ -1,0 +1,32 @@
+/* Sits underneath the header, header position is set to static */
+
+.new-tweet {
+  position: relative;
+  padding: 5vh 10vw;
+  text-align: center;
+}
+.new-tweet textarea {
+  padding: inherit;
+  width: 80vw;
+  border-width: thick;
+  border-bottom-color: gray;
+  background-color: inherit;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  resize: none;
+}
+/* Only includes/affects the "TWEET" button */
+.new-tweet input {
+  float: left;
+  font-family: Bungee, 'Sans Serif';
+  color: whitesmoke;
+  background-color: #4152a1;
+  border: transparent;
+}
+ /* Only includes/affects the character limit counts */
+.new-tweet span {
+  float: right;
+  color: gray;
+  font-family: Bungee, "Sans Serif";
+}
