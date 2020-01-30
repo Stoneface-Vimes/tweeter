@@ -76,7 +76,7 @@ body .tweet-container footer {
   margin-left: 16px;
   margin-right: 16px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
   float: right;
   margin-bottom: 8px;

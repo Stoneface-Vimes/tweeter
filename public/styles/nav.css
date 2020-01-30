@@ -1,5 +1,7 @@
 /* Only contains the logo for now */
 nav {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   float: top;
   height: 120px;
@@ -20,13 +22,28 @@ nav span {
   font-size: 44px;
 }
 /* "Write a new tweet" on the top right */
+/* Uses flex to display the text and picture in a column */
 nav .write {
-  margin-right: 8px;
+  flex-wrap: nowrap;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
   font-family: "Source Sans Pro", "Sans Serif";
   font-size: 32px;
   /* The below position prevents the text from being pushed down and potentially
   un-allinging the profile picture */
-  position: absolute;
-  right: 0;
-  margin-right: 1.5em;
+  /* position: absolute; */
+}
+/* if I needed to add more buttons, could theoretically add them here and run */
+/* another flex grid to style them */
+nav .write img {
+  align-self: center;
+  max-width: 18%;
+  max-height: auto;
+}
+
+nav .write img:hover {
+  cursor: pointer;
 }

@@ -29,7 +29,9 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
-    <span class="write"> <b>Write</b> a new tweet</span>
+    <span class="write"> <p><b>Write</b> a new tweet</p>
+    <img src="/images/down-arrow.svg">
+    </span>
   </nav>
 
   <header class="splash">
@@ -48,7 +50,7 @@
   <!-- Section for writing a new tweet -->
   <section class="new-tweet">
     <h2><b>Compose Tweet </b></h2>
-    <form action="/tweets/" method="POST">
+    <form action="/tweets/" method="POST" id="send-tweet">
       <textarea name="text" placeholder="What are you humming about?"></textarea>
       <input type="submit" value="Tweet">
       <span class="counter">140</span>
@@ -56,20 +58,7 @@
   </section>
   <!-- Article containing prreviously sent tweets -->
   <article class="tweet-container">
-    <header>
-        <img src="/images/profile-hex.png">
-        <div>displayName</div>
-        <p> @username </p>
-    </header>
-    <p id="content">This will be the tweets content</p>
-    <footer>
-      <p> When the comment was made</p>
-      <div>
-        <img src="/images/flag.png">
-        <img src="/images/retweet.png">
-        <img src="/images/twitter-heart.png">
-      </div>
-    </footer>
+
   </article>
 </body>
 
