@@ -19,6 +19,7 @@
 
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -49,6 +50,10 @@
   <main class="container"></main>
   <!-- Section for writing a new tweet -->
   <section class="new-tweet">
+    <!-- Sliding Error Display -->
+    <div>
+
+    </div>
     <h2><b>Compose Tweet </b></h2>
     <form action="/tweets/" method="POST" id="send-tweet">
       <textarea name="text" placeholder="What are you humming about?"></textarea>

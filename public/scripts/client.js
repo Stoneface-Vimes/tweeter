@@ -1,3 +1,4 @@
+
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -47,20 +48,35 @@ $(document).ready(function () {
   }
 
   // Watches for a sunbmit event
-  $button.on('submit', function () {
+  $button.on('submit', function (evt) {
+    //Clears any error messages that may be present related to submitting tweets
     console.log("Tweet Submitted, performing ajax call...")
     const sent = $('#send-tweet').serialize();
     const temp = sent.slice(5)
-    event.preventDefault();
+    evt.preventDefault();
+    //Error logic
     if (temp.length > 140) {
-      alert("Too many characters")
+      $('.new-tweet div').html('')
+      $('.new-tweet div').hide();
+      $('.new-tweet div').append("<p> You've typed too many characters </p>")
+      $('.new-tweet div').slideToggle();
     } else if (temp.length === 0) {
-      alert("Empty input field")
+      $('.new-tweet div').html('')
+      $('.new-tweet div').hide();
+      $('.new-tweet div').append("<p> Please write something to share </p>")
+      $('.new-tweet div').slideToggle();
+    //If no errors
     } else {
-      $.ajax(({ url: '/tweets/', method: 'POST', data: $('#send-tweet').serialize() }))
+      $('.new-tweet div').slideToggle(function () {
+        $('.new-tweet div').html('')
+      })
+      //Clears errors
+      $.ajax(({ url: '/tweets/', method: 'POST', data: $(evt.target).serialize() }))
         .then(function () {
           loadTweets();
         })
+        //Clears textbox
+        $("#send-tweet").trigger("reset")
     }
   })
 
@@ -71,11 +87,13 @@ $(document).ready(function () {
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
     }
+    const time = moment(input.created_at).fromNow()
+    console.log(time)
     const avatar = `<img src= ${escape(input.user.avatars)}>`
     const name = `<div> ${escape(input.user.name)} </div>`
     const handle = `<p> ${escape(input.user.handle)} </p>`
     const text = `<p id="content">${escape(input.content.text)}</p>`
-    const timeCreated = `<p> ${escape(input.created_at)}</p>`
+    const timeCreated = `<p> ${escape(time)}</p>`
     const markup = `
     <header>
         ${avatar}

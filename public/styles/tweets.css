@@ -12,6 +12,7 @@ body .tweet-container {
   position: static;
   border-color: gray;
   background-color: white;
+  word-wrap: break-word;
 }
 
 

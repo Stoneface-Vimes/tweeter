@@ -3,7 +3,7 @@ $(document).ready(function () {
   let count = 0;
 
     //On event keyup:
-  $("section form textarea").keyup(function () {
+  $("section form textarea").on('input', function () {
     //Creates and updates the counter number
     count = 140 - $(this).val().length;
     //Parses through the sibling elements until the class counter is found

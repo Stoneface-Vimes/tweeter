@@ -37,7 +37,7 @@ html {
 
 /* Encompases the body*/
 body {
-  float: left;
+  /* float: left; */
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -51,3 +51,14 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ @media not nav and (max-width: 1024px) {
+   body {
+    display: flex;
+    flex-direction: column;
+   }
+   main {
+    display: flex;
+    flex-direction: column;  
+   }
+}

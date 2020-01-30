@@ -5,6 +5,15 @@
   padding: 5vh 10vw;
   text-align: center;
 }
+
+.new-tweet div p{
+  position: relative;
+  border: thick dotted red;
+  margin: inherit;
+  padding: 1em;
+  color: black;
+}
+
 .new-tweet textarea {
   padding: inherit;
   width: 80vw;
