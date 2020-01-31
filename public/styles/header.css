@@ -1,6 +1,5 @@
 body .splash div {
   position: static;
-  float: none;
   /* changed height to auto from 400px
   This ensure that when the browser is resized, the name and profile picutre
   always has the proper background behind them */
