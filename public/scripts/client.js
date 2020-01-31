@@ -8,15 +8,14 @@
 $(document).ready(function () {
 
 
-
   const $button = $(" .new-tweet form ");
   //slides the compose area in click
   $('.write img').on('click', function () {
-      $('.new-tweet').slideToggle(function() {
-        //After the form slides out, focuses on the textarea allowing typing
-        $('.new-tweet form textarea').trigger("focus")
+    $('.new-tweet').slideToggle(function () {
+      //After the form slides out, focuses on the textarea allowing typing
+      $('.new-tweet form textarea').trigger("focus")
 
-      })
+    })
   })
 
 
@@ -66,7 +65,7 @@ $(document).ready(function () {
       $('.new-tweet #error-display').hide();
       $('.new-tweet #error-display').append("<p> Please write something to share </p>")
       $('.new-tweet #error-display').slideToggle();
-    //If no errors
+      //If no errors
     } else {
       $('.new-tweet #error-display').slideToggle(function () {
         $('.new-tweet #error-display').html('')
@@ -76,8 +75,12 @@ $(document).ready(function () {
         .then(function () {
           loadTweets();
         })
-        //Clears textbox
-        $("#send-tweet").trigger("reset")
+      //Clears textbox
+      $("#send-tweet").trigger("reset")
+      //Resets the counter to 140
+      const defaultCounter = 140;
+      $('.counter').text(defaultCounter.toString())
+      
     }
   })
 
