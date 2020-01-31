@@ -37,27 +37,17 @@ html {
 
 /* Encompases the body*/
 body {
-  /* float: left; */
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", "Sans Serif";
 }
-/* main {
-  padding: 0 10vw;
-  background-color: inherit;
-  text-align: center;
-} */
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
  /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
- @media only screen and (min-width:1024px) {
-
-  /* nav {
-    background-color: olivedrab;
-  } */
+ @media only screen and (min-width:400px) {
 
   html #workdammit #resize{
     display: flex;
@@ -76,10 +66,6 @@ body {
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center; */
   }
 
   html #workdammit #resize #left .splash div img {
