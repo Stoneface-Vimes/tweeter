@@ -1,15 +1,12 @@
-/* Only contains the logo for now */
+
 nav {
   display: flex;
   justify-content: space-between;
   position: relative;
-  float: top;
   height: 120px;
-  max-height: auto;
   width: 100vw;
-  z-index: 99; /* Set to 99 as it should alays be on top */
+  z-index: 99;
   color: #FFFFFF;
-  /* Changes to green when the out of desktop view range */
   background-color: olivedrab;
   background-image: url("/images/crissxcross.png");
   padding: 1.5em;
@@ -35,16 +32,12 @@ nav .write {
   flex-direction: column;
   font-family: "Source Sans Pro", "Sans Serif";
   font-size: 32px;
-  /* The below position prevents the text from being pushed down and potentially
-  un-allinging the profile picture */
-  /* position: absolute; */
 }
 /* if I needed to add more buttons, could theoretically add them here and run */
 /* another flex grid to style them */
 nav .write img {
   align-self: center;
   max-width: 18%;
-  max-height: auto;
 }
 
 nav .write img:hover {
@@ -53,7 +46,7 @@ nav .write img:hover {
 
 
 /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:400px) {
 
   nav {
     background-color: #4056a1;
