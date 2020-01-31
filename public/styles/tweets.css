@@ -2,13 +2,11 @@ body .tweet-container {
   display: flex;
   flex-direction: column;
   height: auto;
-  position: static;
   margin-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
   border-style: solid;
   text-align: left;
-  margin: 0, 16px;
   position: static;
   border-color: gray;
   background-color: white;
@@ -42,7 +40,6 @@ body .tweet-container header div {
 }
 
 body .tweet-container header p {
-  display: none;
   color: white;
   display: flex;
   justify-self: right;
