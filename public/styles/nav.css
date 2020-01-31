@@ -53,7 +53,7 @@ nav .write img:hover {
 
 
 /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:1024px) {
 
   nav {
     background-color: #4056a1;

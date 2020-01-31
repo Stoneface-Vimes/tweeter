@@ -53,7 +53,7 @@ body {
  */
 
  /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
- @media only screen and (min-width:800px) {
+ @media only screen and (min-width:1024px) {
 
   /* nav {
     background-color: olivedrab;
@@ -63,17 +63,19 @@ body {
     display: flex;
     justify-content: center;
     align-content: space-around;
-    padding: 10vw;
+    padding-top: 5vw;
 
 }
 
   html #workdammit #resize #left header {
         width: 40vw;
-        height: 50vh;
+        height: auto;
+        max-height: 400px;
+        max-width: 400px;
         display: flex;
         justify-content: center;
         align-content: center;
-        flex-direction: row;
+        flex-direction: column;
         /* display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -82,12 +84,12 @@ body {
 
   html #workdammit #resize #left .splash div img {
     padding: 1vw;
-    width: 200px;
-    max-height: 200px;
+    max-width: 350px;
+    height: auto;
   }
 
   html #workdammit #resize #right {
-    width: 40vw;
+    width: 55vw;
     height: auto;
     display: flex;
     flex-direction: column;

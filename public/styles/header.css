@@ -4,8 +4,8 @@ body .splash div {
   /* changed height to auto from 400px
   This ensure that when the browser is resized, the name and profile picutre
   always has the proper background behind them */
-  height: auto;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: olivedrab;
   text-align: center;
   background-image: url("/images/crissxcross.png");

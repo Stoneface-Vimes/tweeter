@@ -30,6 +30,7 @@ $(document).ready(function () {
   }
   $(window).on('load', function () {
     console.log("initial tweet load")
+    $('.new-tweet').hide()
     if ($('article').has("div").length === 0) {
       loadTweets();
     }

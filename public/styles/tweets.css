@@ -4,7 +4,8 @@ body .tweet-container {
   height: auto;
   position: static;
   margin-top: 5vh;
-  margin-left: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   border-style: solid;
   text-align: left;
   margin: 0, 16px;
