@@ -26,45 +26,50 @@
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
 
-<body>
+<body id="workdammit">
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
-    <span class="write"> <p><b>Write</b> a new tweet</p>
-    <img src="/images/down-arrow.svg">
+    <span class="write">
+      <p><b>Write</b> a new tweet</p>
+      <img src="/images/down-arrow.svg">
     </span>
   </nav>
-
-  <header class="splash">
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <div>
-      <h2>
-        <b>Your</b> Name
-      </h2>
-    </div>
-  </header>
-
   <!-- Page-specific (main) content here -->
-  <main class="container"></main>
-  <!-- Section for writing a new tweet -->
-  <section class="new-tweet">
-    <!-- Sliding Error Display -->
-    <div>
-
+  <main id="resize" class="shuffle">
+    <div id="left">
+      <header class="splash">
+        <div>
+          <img src="/images/profile-hex.png">
+        </div>
+        <div>
+          <h2>
+            <b>Your</b> Name
+          </h2>
+        </div>
+      </header>
     </div>
-    <h2><b>Compose Tweet </b></h2>
-    <form action="/tweets/" method="POST" id="send-tweet">
-      <textarea name="text" placeholder="What are you humming about?"></textarea>
-      <input type="submit" value="Tweet">
-      <span class="counter">140</span>
-    </form>
-  </section>
-  <!-- Article containing prreviously sent tweets -->
-  <article class="tweet-container">
 
-  </article>
+    <!-- Section for writing a new tweet -->
+    <div id="right">
+      <section class="new-tweet">
+        <!-- Sliding Error Display -->
+        <div>
+
+        </div>
+        <h2><b>Compose Tweet </b></h2>
+        <form action="/tweets/" method="POST" id="send-tweet">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <!-- Article containing prreviously sent tweets -->
+      <article class="tweet-container">
+
+      </article>
+    </div>
+  </main>
 </body>
 
 </html>

@@ -43,22 +43,46 @@ body {
   font-size: 24px;
   font-family: "Source Sans Pro", "Sans Serif";
 }
-main {
+/* main {
   padding: 0 10vw;
   background-color: inherit;
   text-align: center;
-}
+} */
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- @media not nav and (max-width: 1024px) {
-   body {
+ @media only screen and (min-width:800px) {
+  html #workdammit #resize{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+  html #workdammit #resize #left .splash div {
+        width: 40vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+  }
+
+  html #workdammit #resize #left .splash div img {
+    padding: 1vw;
+    width: 200px;
+    max-height: 200px;
+  }
+
+  html #workdammit #resize #right {
+    width: 40vw;
+    height: auto;
     display: flex;
     flex-direction: column;
-   }
-   main {
-    display: flex;
-    flex-direction: column;  
-   }
+    justify-content: flex-end;
+    align-content: center;
+
 }
+
+ }
