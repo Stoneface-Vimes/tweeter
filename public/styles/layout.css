@@ -52,21 +52,32 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+ /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
  @media only screen and (min-width:800px) {
+
+  /* nav {
+    background-color: olivedrab;
+  } */
+
   html #workdammit #resize{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
+    padding: 10vw;
 
 }
 
-  html #workdammit #resize #left .splash div {
+  html #workdammit #resize #left header {
         width: 40vw;
-        height: auto;
+        height: 50vh;
         display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        /* display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-content: center;
+        align-content: center; */
   }
 
   html #workdammit #resize #left .splash div img {

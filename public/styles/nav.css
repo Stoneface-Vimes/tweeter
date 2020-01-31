@@ -9,11 +9,14 @@ nav {
   width: 100vw;
   z-index: 99; /* Set to 99 as it should alays be on top */
   color: #FFFFFF;
-  background-color: #4056a1;
+  /* Changes to green when the out of desktop view range */
+  background-color: olivedrab;
+  background-image: url("/images/crissxcross.png");
   padding: 1.5em;
   font-family: "Source Sans Pro", "Sans Serif";
 }
 /* Tweeter logo on the top left */
+ 
 nav span {
   float: left;
   margin-left: 8px;
@@ -46,4 +49,14 @@ nav .write img {
 
 nav .write img:hover {
   cursor: pointer;
+}
+
+
+/* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
+@media only screen and (min-width:800px) {
+
+  nav {
+    background-color: #4056a1;
+    background-image: unset;
+  }
 }

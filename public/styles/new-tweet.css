@@ -4,6 +4,7 @@
   position: relative;
   padding: 5vh 10vw;
   text-align: center;
+  max-width: 40vw;
 }
 
 .new-tweet div p{
@@ -16,7 +17,7 @@
 
 .new-tweet textarea {
   padding: inherit;
-  width: 80vw;
+  width: inherit;
   border-width: thick;
   border-bottom-color: gray;
   background-color: inherit;
@@ -25,6 +26,14 @@
   border-right: transparent;
   resize: none;
 }
+
+.new-tweet form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
+
 /* Only includes/affects the "TWEET" button */
 .new-tweet input {
   float: left;

@@ -56,19 +56,19 @@ $(document).ready(function () {
     evt.preventDefault();
     //Error logic
     if (temp.length > 140) {
-      $('.new-tweet div').html('')
-      $('.new-tweet div').hide();
-      $('.new-tweet div').append("<p> You've typed too many characters </p>")
-      $('.new-tweet div').slideToggle();
+      $('.new-tweet #error-display').html('')
+      $('.new-tweet #error-display').hide();
+      $('.new-tweet #error-display').append("<p> You've typed too many characters </p>")
+      $('.new-tweet #error-display').slideToggle();
     } else if (temp.length === 0) {
-      $('.new-tweet div').html('')
-      $('.new-tweet div').hide();
-      $('.new-tweet div').append("<p> Please write something to share </p>")
-      $('.new-tweet div').slideToggle();
+      $('.new-tweet #error-display').html('')
+      $('.new-tweet #error-display').hide();
+      $('.new-tweet #error-display').append("<p> Please write something to share </p>")
+      $('.new-tweet #error-display').slideToggle();
     //If no errors
     } else {
-      $('.new-tweet div').slideToggle(function () {
-        $('.new-tweet div').html('')
+      $('.new-tweet #error-display').slideToggle(function () {
+        $('.new-tweet #error-display').html('')
       })
       //Clears errors
       $.ajax(({ url: '/tweets/', method: 'POST', data: $(evt.target).serialize() }))

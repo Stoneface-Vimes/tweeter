@@ -54,14 +54,15 @@
     <div id="right">
       <section class="new-tweet">
         <!-- Sliding Error Display -->
-        <div>
+        <div id="error-display">
 
         </div>
-        <h2><b>Compose Tweet </b></h2>
         <form action="/tweets/" method="POST" id="send-tweet">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <div>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
+        </div>
         </form>
       </section>
       <!-- Article containing prreviously sent tweets -->
