@@ -39,14 +39,14 @@ nav .write img {
   align-self: center;
   max-width: 18%;
 }
-
+/* Turns the curser into a pointer when hovering over the button to make a new tweet */
 nav .write img:hover {
   cursor: pointer;
 }
 
 
 /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
-@media only screen and (min-width:400px) {
+@media only screen and (min-width:1024px) {
 
   nav {
     background-color: #4056a1;

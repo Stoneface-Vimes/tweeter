@@ -46,9 +46,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- /* MAKE SURE THIS IS SET TO 1024 PIXELS, ANY OTHER VALUE IS FOR TESTING */
- @media only screen and (min-width:400px) {
+/* This media query handles chaning the website to a 'desktop' view */
+ @media only screen and (min-width:1024px) {
 
+  /* Arranges the view into two 'sections' and displays them as columns */
   html #workdammit #resize{
     display: flex;
     justify-content: center;
@@ -56,7 +57,8 @@ body {
     padding-top: 5vw;
 
 }
-
+  /* Handles resizing the left column, which includes the profile
+  picture and the users name. Arranges them in columns */
   html #workdammit #resize #left header {
         width: 40vw;
         height: auto;
@@ -68,12 +70,15 @@ body {
         flex-direction: column;
   }
 
+  /* Ensure that the profile picutre stays an appropriate size in this view */
   html #workdammit #resize #left .splash div img {
     padding: 1vw;
     max-width: 350px;
     height: auto;
   }
 
+  /* Handles resizing the right column, includes the error display, new tweet input
+  and the tweet container display. Arranges them in columns. */
   html #workdammit #resize #right {
     width: 55vw;
     height: auto;

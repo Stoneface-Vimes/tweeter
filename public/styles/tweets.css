@@ -1,3 +1,5 @@
+/* Handles all the elements reffering to sent/displayed tweets */
+
 body .tweet-container {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@ body .tweet-container {
   word-wrap: break-word;
 }
 
-
+/* The header contains a profile picture, username and handle. */
 body .tweet-container header{
   display: flex;
   justify-content: space-between;
@@ -32,13 +34,15 @@ body .tweet-container header img{
   height: auto;
   margin-left: 8px;
 }
-
+/* References the username, ensures it is next to the picture and centered */
 body .tweet-container header div {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
 
+/* References the handle, combined with the CSS directly below, "hides" the
+users handle until the '.tweet-container' class is hovered over. Somewhat shoddy. */
 body .tweet-container header p {
   color: white;
   display: flex;
@@ -48,16 +52,14 @@ body .tweet-container header p {
   font-size: 24px;
   padding-right: 16px;
 }
+
+/* Changes the color of all the user text to black */
 body .tweet-container:hover p {
   color: black;
 }
 
-/* Looks goofy fix later */
-body .tweet-container:hover footer img {
-  box-shadow: 2px 1px gray;
-}
 
-
+/* References the user-composed text in each tweet */
 body .tweet-container #content {
   border-bottom: teal;
   padding-top: 16px;
@@ -70,6 +72,8 @@ body .tweet-container #content {
   padding-bottom: 16px;
 }
 
+/* References the time 'time from posting' and icon elements, which is all that
+the footer contains */
 body .tweet-container footer {
   margin-left: 16px;
   margin-right: 16px;
@@ -81,19 +85,28 @@ body .tweet-container footer {
 
 }
 
+/* Specifically \text in the footer */
 body .tweet-container footer p {
   margin: 16px;
   font-size: 16px;
   color: black;
 }
-
+/* References for the 'report', 'retweet' and 'heart' icons */
 body .tweet-container footer img {
   width: 16px;
   height: auto;
 }
 
+/* Creates a shadow on everything in the article element (which is everything
+tweet related) */
 article:hover {
   box-shadow: 5px 5px darkgrey;
   text-shadow: 2px 2px darkgrey;
 }
 
+/* Applies a shadow to the bottom right icons when the '.tweet-container'
+element is hovered over. The shadow looks a bit goofy/Windows 95-ish */
+body .tweet-container:hover footer img {
+  box-shadow: 2px 1px gray;
+  background: transparent;
+}

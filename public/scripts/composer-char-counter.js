@@ -1,24 +1,23 @@
+
+//This nested function is responsible for handling the character count, both the count itself and
+//changing the font color
 $(document).ready(function () {
-  console.log("Composer-char-counter: document has loaded");
- let count = 0;
+  //Stores the length of the users string as they type it
+  let count = 0;
 
   //On input:
   $("main section form textarea").on('input', function () {
     //Updates the counter number
     count = 140 - $(this).val().length;
-    //Parses through the sibling elements until the class counter is found
-    let sibling = $(this).parent("form").find(".counter")
+    //Climbs up one parent, then browses the child elements until the class 'counter' is found
+    let cousin = $(this).parent("form").find(".counter")
     //Sets the text value of the counter class to the count var
-    $(sibling).text(count.toString())
+    $(cousin).text(count.toString())
     //Handles changing the color of the counter
     if (count < 0) {
-      $(sibling).css("color", "red")
+      $(cousin).css("color", "red")
     } else {
-      $(sibling.css("color", "gray"))
+      $(cousin.css("color", "gray"))
     }
   });
 });
-
-// $("section .counter").click(function () {
-//   console.log("Handler for .click() called.");
-// });

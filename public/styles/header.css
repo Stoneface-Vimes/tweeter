@@ -1,8 +1,7 @@
+/* Element that references the background color and transparent image of
+the header/splash area */
 body .splash div {
   position: static;
-  /* changed height to auto from 400px
-  This ensure that when the browser is resized, the name and profile picutre
-  always has the proper background behind them */
   height: 100%;
   width: 100%;
   background-color: olivedrab;
@@ -10,6 +9,7 @@ body .splash div {
   background-image: url("/images/crissxcross.png");
 }
 
+/* Element that displays the users name ('Your Name') */
 body .splash h2 {
   margin: 0px;
   padding-bottom: 1em;
